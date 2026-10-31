@@ -1,0 +1,21 @@
+[package]
+name = "memforge-cli"
+description = "MemForge command-line memory stability tester"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "memforge"
+path = "src/main.rs"
+
+[dependencies]
+memforge-engine.workspace = true
+memforge-core.workspace = true
+memforge-platform.workspace = true
+serde_json.workspace = true
+clap.workspace = true
+ctrlc = "3"
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { workspace = true, features = ["Win32_Foundation", "Win32_System_Console"] }

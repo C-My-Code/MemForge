@@ -1,0 +1,9 @@
+[package]
+name = "memforge-core"
+description = "Platform-independent memory test algorithms for MemForge"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true

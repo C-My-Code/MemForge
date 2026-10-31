@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/C-My-Code/Memforge"
+rust-version = "1.89"
+
+[workspace.dependencies]
+memforge-core = { path = "crates/memforge-core" }
+memforge-platform = { path = "crates/memforge-platform" }
+memforge-engine = { path = "crates/memforge-engine" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+crossbeam-channel = "0.5"
+clap = { version = "4.6", features = ["derive"] }
+eframe = "0.37"
+windows-sys = "0.61"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = 1

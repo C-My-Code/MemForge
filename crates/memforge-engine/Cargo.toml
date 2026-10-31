@@ -1,0 +1,14 @@
+[package]
+name = "memforge-engine"
+description = "Test orchestration engine for MemForge"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+memforge-core.workspace = true
+memforge-platform.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+crossbeam-channel.workspace = true
