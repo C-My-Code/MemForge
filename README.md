@@ -1,6 +1,6 @@
 # MemForge
 
-**An open-source memory stability tester for overclocked DDR4/DDR5 on Windows.**
+**An open-source memory stress tester for overclocked DDR4/DDR5 on Windows.**
 
 MemForge stresses your RAM from inside Windows, on every core at once, with a
 set of patterns designed to expose marginal frequency, timing and voltage
